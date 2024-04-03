@@ -14,7 +14,7 @@ const APM_SERVER =
 module.exports = (config) => {
   const configuration = {
     autoWatch: false,
-    browsers: ['Firefox'],
+    browsers: ['Chrome'],
     browserConsoleLogOptions: {
       level: 'error',
       format: '%b %T: %m',
