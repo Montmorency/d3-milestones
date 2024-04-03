@@ -1,4 +1,7 @@
 ## [`main`](https://github.com/walterra/d3-milestones/tree/main)
+HL Merging the optimized layout.
+
+## [`main`](https://github.com/walterra/d3-milestones/tree/main)
 
 No public interface changes since `v1.4.7`.
 
