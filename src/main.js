@@ -424,7 +424,7 @@ export default function milestones(selector) {
                 .append('span')
                 .classed('milestones-label', true)
                 .classed('milestones-text-label', true)
-                .classed('milestones-label-complete', labelCallback(v[mapping.timestamp])) // labelCallback :: Date String -> Bool (custom markup in .css)
+                .classed('milestones-label-complete', true) //labelCallback(v[mapping.timestamp])) // labelCallback :: Date String -> Bool (custom markup in .css)
                 .text(t);
             }
 
