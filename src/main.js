@@ -60,6 +60,12 @@ export default function milestones(selector) {
   }
   setLabelFormat(DEFAULTS.LABEL_FORMAT);
 
+  let labelCallback;
+  function setLabelCallback(d) {
+    labelFormat = () => console.log('labelCallback');
+  }
+  setLabelCallback();
+
   let range;
   function setRange(d) {
     if (Array.isArray(d) && d.length == 2) {
@@ -418,6 +424,7 @@ export default function milestones(selector) {
                 .append('span')
                 .classed('milestones-label', true)
                 .classed('milestones-text-label', true)
+                .classed('milestones-label-complete', labelCallback(v[mapping.timestamp])) // labelCallback :: Date String -> Bool (custom markup in .css)
                 .text(t);
             }
 
@@ -531,6 +538,7 @@ export default function milestones(selector) {
     distribution: setDistribution,
     parseTime: setParseTime,
     labelFormat: setLabelFormat,
+    labelCallback : setLabelCallback, // custom format label according to condition. 
     urlTarget: setUrlTarget,
     useLabels: setUseLabels,
     range: setRange,
