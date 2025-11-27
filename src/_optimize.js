@@ -4,7 +4,7 @@ import { nest } from 'd3-collection';
 import { cssAboveClass, cssBelowClass, cssLastClass } from './_css';
 
 const LABEL_MIN_WIDTH = { horizontal: 60, vertical: 30 };
-const ADJUST_PIXEL_STEP = 10;
+const ADJUST_PIXEL_STEP = 25;
 const DEBUG_CHART = false;
 const DEBUG_TIME = true;
 
